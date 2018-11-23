@@ -1,0 +1,72 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="S9cUoA9jFvfI?Eh=K-8Y" x="-1068" y="-407">
+    <field name="NAME">numero</field>
+    <value name="VALUE">
+      <block type="text" id="#q?m09iBc)j/w+`MwJ;L">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="S?pz]U)7JB.RK2)3}{gO" x="-1065" y="-352">
+    <mutation component_type="Button" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="I.,Y,|SMmmaADtllEYJY">
+        <field name="VAR">global numero</field>
+        <value name="VALUE">
+          <block type="component_set_get" id=".kZ^uO|aRuwXCJBAt)D)">
+            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextBox1</field>
+            <field name="PROP">Text</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="e-{,A3jzD`M2g+SlhR`-">
+            <mutation component_type="TinyDB" method_name="StoreValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+            <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+            <value name="ARG0">
+              <block type="text" id="r-lVnFLBQ+nS)h!H`Sm8">
+                <field name="TEXT">tiny.numero</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="lexical_variable_get" id=":#:tFrpv*H]:?{YNr5ar">
+                <field name="VAR">global numero</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_openAnotherScreen" id="ea$Uwk8_wjD-MZ]?*moa">
+                <value name="SCREEN">
+                  <block type="text" id="0I%;gG}e0jZnHp_5:m9}">
+                    <field name="TEXT">ScreenPainelCord</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="CItx~{@Iw%[@jJY6}2R+" x="-1061" y="-166">
+    <mutation component_type="Form" instance_name="ScreenAtendimento" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenAtendimento</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id=".?D0^jG;wbhW[1ks5j~8">
+        <value name="SCREEN">
+          <block type="text" id="M$WZ@UTj=YGhAoztUi-1">
+            <field name="TEXT">ScreenSelect</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="DXpc~[]gVs4!^B=uP{k(" x="-1061" y="-96">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="controls_closeApplication" id="dcy7v/Sm4XoI}C14$8PD"></block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="167" language-version="21"></yacodeblocks>
+</xml>

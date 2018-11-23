@@ -1,0 +1,657 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="global_declaration" id="zHh@M*H3YdKW7!f}TJQG" x="-1373" y="-1326">
+    <field name="NAME">guiche</field>
+    <value name="VALUE">
+      <block type="text" id="z4T5T*5I#-2CRBW8Cos`">
+        <field name="TEXT">0</field>
+      </block>
+    </value>
+  </block>
+  <block type="component_event" id="S$6V{+s}O9JfiRxMTDO=" x="-1362" y="-1117">
+    <mutation component_type="Form" instance_name="ScreenPainelCord" event_name="Initialize"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenPainelCord</field>
+    <statement name="DO">
+      <block type="component_set_get" id="8?[F3h!zDp+|8q?rn1pF">
+        <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+        <field name="COMPONENT_SELECTOR">Web1</field>
+        <field name="PROP">Url</field>
+        <value name="VALUE">
+          <block type="text" id="Y,{D%SyS=[yQ8)5q4*U6">
+            <field name="TEXT">http://bitvoice.com.br/apps/painel/what.php?senha=pir.anhanguera.2018&amp;numero=1</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="tM8YHrgbCzt`WTKGkJ{j">
+            <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web1</field>
+            <next>
+              <block type="component_set_get" id="BL.ptv+k^lzz=CvKV:zs">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                <field name="COMPONENT_SELECTOR">Label4</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="component_method" id="/mal7X5l6gtJz,NJ91vl">
+                    <mutation component_type="TinyDB" method_name="GetValue" is_generic="false" instance_name="Tiny_DB1"></mutation>
+                    <field name="COMPONENT_SELECTOR">Tiny_DB1</field>
+                    <value name="ARG0">
+                      <block type="text" id="(8^ISX_s/mlFxH;8LdI6">
+                        <field name="TEXT">tiny.numero</field>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block type="text" id="P;lylC{u[ZXn-Nx`CK{w">
+                        <field name="TEXT">000</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="Vs#CupY%m5*?+7~HK%?H">
+                    <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web2"></mutation>
+                    <field name="COMPONENT_SELECTOR">Web2</field>
+                    <field name="PROP">Url</field>
+                    <value name="VALUE">
+                      <block type="text" id="j,nkh^H.ra4JXgla(r.S">
+                        <field name="TEXT">http://bitvoice.com.br/apps/painel/whats.php?senha=pir.anhanguera.2018&amp;numero=1</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="component_method" id="DQgGV0u}htqq].yld*BT">
+                        <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web2"></mutation>
+                        <field name="COMPONENT_SELECTOR">Web2</field>
+                        <next>
+                          <block type="controls_if" id="hJ1CR$D[W$*%M~.G:LvW">
+                            <value name="IF0">
+                              <block type="logic_compare" id="%-DvvAqlLvFbmLSc!uWd">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="{c~A{er;r#vV2jxlXojG">
+                                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Label4</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="text" id="j[,+;GZ7Anc[Qym8a/^,">
+                                    <field name="TEXT"></field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_method" id="WK5}o_}G=%v.`${$2T1)">
+                                <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                <value name="ARG0">
+                                  <block type="text" id="=JHZ%@ySZVPC(%;Rka7)">
+                                    <field name="TEXT">Senha em branco, favor corrigir.</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="controls_openAnotherScreen" id="nK4HDtowJ@54Ps@ic+Wu">
+                                    <value name="SCREEN">
+                                      <block type="text" id=",w=qckb8pi-AuzKdtH#p">
+                                        <field name="TEXT">ScreenAtendimento</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="8=vuu*LW^fN@@zmIR3.G" x="-1358" y="-734">
+    <mutation component_type="Web" instance_name="Web1" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web1</field>
+    <statement name="DO">
+      <block type="controls_if" id="m3G`mhko,Y-[{b3ovI_S">
+        <mutation else="1"></mutation>
+        <value name="IF0">
+          <block type="logic_compare" id="cDD*_N1s@^Mln[,FX1q6">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="lexical_variable_get" id="woXodD2+J#xzF$O0ByjX">
+                <mutation>
+                  <eventparam name="responseCode"></eventparam>
+                </mutation>
+                <field name="VAR">responseCode</field>
+              </block>
+            </value>
+            <value name="B">
+              <block type="math_number" id="JH6cWSpH_t`mZL*FYvOm">
+                <field name="NUM">200</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="component_set_get" id="_zBp$t2nKz0$l$z+/SRT">
+            <mutation component_type="TextBox" set_or_get="set" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+            <field name="COMPONENT_SELECTOR">TextBox1</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="lexical_variable_get" id="4yiHx(Ai7+Js_t:j`{Q)">
+                <mutation>
+                  <eventparam name="responseContent"></eventparam>
+                </mutation>
+                <field name="VAR">responseContent</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="Or|MHI?BrkeO`KZq~l#:">
+                <mutation component_type="Clock" set_or_get="set" property_name="TimerEnabled" is_generic="false" instance_name="Clock1"></mutation>
+                <field name="COMPONENT_SELECTOR">Clock1</field>
+                <field name="PROP">TimerEnabled</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id="m2ZloS/6DaG;p]Lh]mV-">
+                    <field name="BOOL">TRUE</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="component_set_get" id="vr/pR:+a#vrh616bGZV|">
+                    <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                    <field name="COMPONENT_SELECTOR">Label6</field>
+                    <field name="PROP">Text</field>
+                    <value name="VALUE">
+                      <block type="math_subtract" id="JR;*{R8EcNtlU9qz/S(d">
+                        <value name="A">
+                          <block type="component_set_get" id="F^p@pviY`1j0z:5Wd%@Y">
+                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                            <field name="COMPONENT_SELECTOR">Label4</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="component_set_get" id="|6!q}h2mT_p.u:I:V1l/">
+                            <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                            <field name="COMPONENT_SELECTOR">TextBox1</field>
+                            <field name="PROP">Text</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="controls_if" id=",-JC2u8;SIrBN1Hq[b5D">
+                        <value name="IF0">
+                          <block type="logic_operation" id="wkro$QOVWV|n|?pKYugo">
+                            <field name="OP">AND</field>
+                            <value name="A">
+                              <block type="math_compare" id="l(D[phH2GzUGd{@/h8)/">
+                                <field name="OP">LT</field>
+                                <value name="A">
+                                  <block type="component_set_get" id=")%(n;p65-Ys^Oe7:Fj67">
+                                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Label4</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="component_set_get" id="6?BFKtC@NS(c!7e?n8k!">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <block type="math_compare" id="Y:[/zU3los3^OqbQOVg#">
+                                <field name="OP">GTE</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="m!gY7y7kc2]FIMF-dG.x">
+                                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Label4</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="math_number" id="BTgiOw0BlJe7ODt.hN6?">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="component_method" id="Muw4^YAp*1MBrGXbTn6y">
+                            <mutation component_type="Notifier" method_name="ShowAlert" is_generic="false" instance_name="Notifier1"></mutation>
+                            <field name="COMPONENT_SELECTOR">Notifier1</field>
+                            <value name="ARG0">
+                              <block type="text" id="vsR-xLGB(v:NQ)C6(}+a">
+                                <field name="TEXT">Número digitado menor que atual, favor corrigir.</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="controls_openAnotherScreen" id="XQvqaYE]@$9Ga,UzA%#h">
+                                <value name="SCREEN">
+                                  <block type="text" id="|#/eDhQcRtv^pp=u9KmP">
+                                    <field name="TEXT">ScreenAtendimento</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                        <next>
+                          <block type="controls_if" id="Rcyh2Oy%c]YAdB%b,FZ5">
+                            <value name="IF0">
+                              <block type="logic_compare" id="tMrD8$J#x8yz=w#F]m4T">
+                                <field name="OP">EQ</field>
+                                <value name="A">
+                                  <block type="component_set_get" id="QTVOC@WGQwRGh-6CxMZ+">
+                                    <mutation component_type="TextBox" set_or_get="get" property_name="Text" is_generic="false" instance_name="TextBox1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">TextBox1</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                                <value name="B">
+                                  <block type="component_set_get" id="Y;3A2:;i4aubAebYEl|W">
+                                    <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label4"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Label4</field>
+                                    <field name="PROP">Text</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <statement name="DO0">
+                              <block type="component_method" id="89HB;f@,mz?l-O$C6ID$">
+                                <mutation component_type="Vibrate" method_name="Vibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+                                <field name="COMPONENT_SELECTOR">Vibrate1</field>
+                                <value name="ARG0">
+                                  <block type="math_number" id="p~)5Mf(H~b{1+V5hQd$!">
+                                    <field name="NUM">30000</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="component_method" id="xz#Gn8`vC)R;J.KE~Pwh">
+                                    <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                    <value name="ARG0">
+                                      <block type="text" id="T4/F6CfUG%H?n)KDH4z9">
+                                        <field name="TEXT">Chegou sua vez.</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG1">
+                                      <block type="text" id="}-gS.VpmcrqF~#^9#F_M">
+                                        <field name="TEXT">Seu número foi chamado.</field>
+                                      </block>
+                                    </value>
+                                    <value name="ARG2">
+                                      <block type="text" id="tZpI5a#{a:M,N;_@rt7c">
+                                        <field name="TEXT">Ok</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </statement>
+                            <next>
+                              <block type="controls_if" id="L-]1#Dk=EBaSE}3B.DPl">
+                                <value name="IF0">
+                                  <block type="logic_or" id="[wpaZp[QZljNN|7lvFd`">
+                                    <field name="OP">AND</field>
+                                    <value name="A">
+                                      <block type="math_compare" id="b!O[V)9Kfk,l~,dX;lgy">
+                                        <field name="OP">GT</field>
+                                        <value name="A">
+                                          <block type="component_set_get" id="P9W}Yii=MR8,CI$?MsU~">
+                                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Label6</field>
+                                            <field name="PROP">Text</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="text" id="o8Ij)_cA=2:yC!J/Q6jq">
+                                            <field name="TEXT">0</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <value name="B">
+                                      <block type="math_compare" id="}b=J6ze],LdBeYG}H;LS">
+                                        <field name="OP">LT</field>
+                                        <value name="A">
+                                          <block type="component_set_get" id="wH{aG_x7pdQbE6ut3.4.">
+                                            <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                                            <field name="COMPONENT_SELECTOR">Label6</field>
+                                            <field name="PROP">Text</field>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="text" id="[J^o.MZ`P2In.O^[N]`;">
+                                            <field name="TEXT">6</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </value>
+                                <statement name="DO0">
+                                  <block type="component_method" id="ax}Z{^Q,8v0;i(krN[}i">
+                                    <mutation component_type="Vibrate" method_name="Vibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+                                    <field name="COMPONENT_SELECTOR">Vibrate1</field>
+                                    <value name="ARG0">
+                                      <block type="math_number" id="l]%sLcs[VF7==lp_jlC-">
+                                        <field name="NUM">25000</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="component_method" id="6+4EMiy`+GIH4;KFWa0|">
+                                        <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Notifier1</field>
+                                        <value name="ARG0">
+                                          <block type="text" id="/U~K$Mg{?loNpP`m-vo,">
+                                            <field name="TEXT">Seu número esta chegando.</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG1">
+                                          <block type="text" id="rV/^AoS3ohzGBkFKx)l9">
+                                            <field name="TEXT">Dirija-se ao atendimento.</field>
+                                          </block>
+                                        </value>
+                                        <value name="ARG2">
+                                          <block type="text" id="^Tk).Q4{jmWz,8%hp=mw">
+                                            <field name="TEXT">Estou indo.</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </statement>
+                                <next>
+                                  <block type="controls_if" id="q,V$l6D$f2kV5j%A7+w2">
+                                    <value name="IF0">
+                                      <block type="logic_operation" id="Iis7Bcyo!KG!AgQJUI:n">
+                                        <field name="OP">AND</field>
+                                        <value name="A">
+                                          <block type="math_compare" id="wnx^nhT2tAA8i;OHVrKO">
+                                            <field name="OP">GT</field>
+                                            <value name="A">
+                                              <block type="component_set_get" id="k{Fj,_Ba7p)X8!Yq1ju0">
+                                                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Label6</field>
+                                                <field name="PROP">Text</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id=")~1XaT#Iq0k?8nA[_!#e">
+                                                <field name="NUM">0</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                        <value name="B">
+                                          <block type="math_compare" id="NA9hhnU-RR6TvXYD;w`f">
+                                            <field name="OP">LTE</field>
+                                            <value name="A">
+                                              <block type="component_set_get" id="8@RIZqCbizj|L%f@9hUq">
+                                                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Label6</field>
+                                                <field name="PROP">Text</field>
+                                              </block>
+                                            </value>
+                                            <value name="B">
+                                              <block type="math_number" id="~y#plb^b0.+Ckg9[aSEB">
+                                                <field name="NUM">10</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </value>
+                                    <statement name="DO0">
+                                      <block type="component_set_get" id="sx[b]+]@m_e9/KKci`aH">
+                                        <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label8"></mutation>
+                                        <field name="COMPONENT_SELECTOR">Label8</field>
+                                        <field name="PROP">Text</field>
+                                        <value name="VALUE">
+                                          <block type="math_multiply" id=":;h:pn]cx636~Z}WH8_/">
+                                            <mutation items="2"></mutation>
+                                            <value name="NUM0">
+                                              <block type="component_set_get" id="#PPy6T5`[P:?Ye~=A:@]">
+                                                <mutation component_type="Label" set_or_get="get" property_name="Text" is_generic="false" instance_name="Label6"></mutation>
+                                                <field name="COMPONENT_SELECTOR">Label6</field>
+                                                <field name="PROP">Text</field>
+                                              </block>
+                                            </value>
+                                            <value name="NUM1">
+                                              <block type="math_number" id="+H:%0:xh(dU~?r=oJ5o.">
+                                                <field name="NUM">9</field>
+                                              </block>
+                                            </value>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </statement>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <statement name="ELSE">
+          <block type="component_method" id="ChqVeOB=fN9=o7=KXiGC">
+            <mutation component_type="Vibrate" method_name="Vibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+            <field name="COMPONENT_SELECTOR">Vibrate1</field>
+            <value name="ARG0">
+              <block type="math_number" id="l}jW3wV0M{xuDPDa.3$|">
+                <field name="NUM">5000</field>
+              </block>
+            </value>
+            <next>
+              <block type="component_method" id="GM_6p6THznm}+=A|FsPl">
+                <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+                <field name="COMPONENT_SELECTOR">Notifier1</field>
+                <value name="ARG0">
+                  <block type="text" id="1*MJ-fIXtx2:T^xF]7PV">
+                    <field name="TEXT">Desculpe o transtorno, pedimos que dirija-se ao atendimento.</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block type="text" id="j05GIE,V9uD=uPM}g!5*">
+                    <field name="TEXT">Estamos com problemas.</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <block type="text" id="Tpn4N86c,oIKM#pDSUxP">
+                    <field name="TEXT">Ok</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="y8yuO#z*cLr*0g*a)h/]" x="-1362" y="299">
+    <mutation component_type="Web" instance_name="Web2" event_name="GotText"></mutation>
+    <field name="COMPONENT_SELECTOR">Web2</field>
+    <statement name="DO">
+      <block type="lexical_variable_set" id="kV(qw2@Or?ztgu{O!H/d">
+        <field name="VAR">global guiche</field>
+        <value name="VALUE">
+          <block type="lexical_variable_get" id="2[rC.zsDhFeAq-c[G_%e">
+            <mutation>
+              <eventparam name="responseContent"></eventparam>
+            </mutation>
+            <field name="VAR">responseContent</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_set_get" id="`c;bTZw;fo6=!*bp=lv~">
+            <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label35"></mutation>
+            <field name="COMPONENT_SELECTOR">Label35</field>
+            <field name="PROP">Text</field>
+            <value name="VALUE">
+              <block type="text_segment" id="GX^4}joX`oyQ^t=_(`Rf">
+                <value name="TEXT">
+                  <block type="lexical_variable_get" id="aq_AfgUF7a8l7CdyYge:">
+                    <field name="VAR">global guiche</field>
+                  </block>
+                </value>
+                <value name="START">
+                  <block type="math_number" id="O)-DoZhpvOfx.2`kI4kZ">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <value name="LENGTH">
+                  <block type="math_number" id="dLPdN0x[WOVaFO5:I,~=">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="component_set_get" id="s{;qiMlz%CeK[H^e+Ou)">
+                <mutation component_type="Label" set_or_get="set" property_name="Text" is_generic="false" instance_name="Label30"></mutation>
+                <field name="COMPONENT_SELECTOR">Label30</field>
+                <field name="PROP">Text</field>
+                <value name="VALUE">
+                  <block type="text_segment" id="SV)b[vzmGL*2{Tr0R0+7">
+                    <value name="TEXT">
+                      <block type="lexical_variable_get" id=".7)PZe35W%9l`p+6o|mq">
+                        <field name="VAR">global guiche</field>
+                      </block>
+                    </value>
+                    <value name="START">
+                      <block type="math_number" id="|XqI1S17r|#=c7hL!VBK">
+                        <field name="NUM">5</field>
+                      </block>
+                    </value>
+                    <value name="LENGTH">
+                      <block type="math_number" id="@2#Nn7a0#5/C[WvAQAu2">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="nhlKkgqKuWHRP;Hq5OtO" x="-1366" y="551">
+    <mutation component_type="Clock" instance_name="Clock1" event_name="Timer"></mutation>
+    <field name="COMPONENT_SELECTOR">Clock1</field>
+    <statement name="DO">
+      <block type="component_set_get" id="U]_c*_NvkG%Y/C0|-?c!">
+        <mutation component_type="Web" set_or_get="set" property_name="Url" is_generic="false" instance_name="Web1"></mutation>
+        <field name="COMPONENT_SELECTOR">Web1</field>
+        <field name="PROP">Url</field>
+        <value name="VALUE">
+          <block type="text" id="tJtMWIa~HM5QN(nFP82O">
+            <field name="TEXT">http://bitvoice.com.br/apps/painel/what.php?senha=pir.anhanguera.2018&amp;numero=1</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="D{A4%Gb.5Aw~8U^`JuF,">
+            <mutation component_type="Web" method_name="Get" is_generic="false" instance_name="Web1"></mutation>
+            <field name="COMPONENT_SELECTOR">Web1</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="1:=w@6h.BH$[^Mdlw5R=" x="-1366" y="648">
+    <mutation component_type="Form" instance_name="ScreenPainelCord" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenPainelCord</field>
+    <statement name="DO">
+      <block type="component_method" id="zt)]}rCId{{[vDEovo=a">
+        <mutation component_type="Vibrate" method_name="CancelVibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+        <field name="COMPONENT_SELECTOR">Vibrate1</field>
+        <next>
+          <block type="controls_openAnotherScreen" id="C0?H`tCT_75TYzoLy5sD">
+            <value name="SCREEN">
+              <block type="text" id="LwA};9@]EQ8B42M`s]!x">
+                <field name="TEXT">ScreenAtendimento</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="34d@L5t,(m[^#N,KVT4c" x="-1365" y="741">
+    <mutation component_type="ThunkableSwitch" instance_name="Switch1" event_name="TouchUp"></mutation>
+    <field name="COMPONENT_SELECTOR">Switch1</field>
+    <statement name="DO">
+      <block type="component_method" id="WMO@(]PSHE^Ym5``spyE">
+        <mutation component_type="Vibrate" method_name="CancelVibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+        <field name="COMPONENT_SELECTOR">Vibrate1</field>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="DXpc~[]gVs4!^B=uP{k(" x="-1363" y="812">
+    <mutation component_type="Button" instance_name="Button1" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button1</field>
+    <statement name="DO">
+      <block type="component_method" id="LMwV~.6C`qBa^V$;93ga">
+        <mutation component_type="Vibrate" method_name="CancelVibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+        <field name="COMPONENT_SELECTOR">Vibrate1</field>
+        <next>
+          <block type="controls_closeApplication" id="dcy7v/Sm4XoI}C14$8PD"></block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="5U)#0)`+ggn3ABBu9x}F" x="-1367" y="906">
+    <mutation component_type="Form" instance_name="ScreenPainelCord" event_name="ErrorOccurred"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenPainelCord</field>
+    <statement name="DO">
+      <block type="component_method" id="jz5EKUT)8e~l+n*!DoxE">
+        <mutation component_type="Vibrate" method_name="Vibrate" is_generic="false" instance_name="Vibrate1"></mutation>
+        <field name="COMPONENT_SELECTOR">Vibrate1</field>
+        <value name="ARG0">
+          <block type="math_number" id=",o8^l(`x9Cyel0(/yp#w">
+            <field name="NUM">5000</field>
+          </block>
+        </value>
+        <next>
+          <block type="component_method" id="KK,zn4[%EFw3v7Xk@rZm">
+            <mutation component_type="Notifier" method_name="ShowMessageDialog" is_generic="false" instance_name="Notifier1"></mutation>
+            <field name="COMPONENT_SELECTOR">Notifier1</field>
+            <value name="ARG0">
+              <block type="text" id="b]fGo9lr-FnL^TWs,.Pf">
+                <field name="TEXT">Verifique sua internet, caso o problema continue, dirija-se ao atendimento.</field>
+              </block>
+            </value>
+            <value name="ARG1">
+              <block type="text" id="}xG-4@B5Q{8qvm58~1kS">
+                <field name="TEXT">Atenção: Conexão perdida.</field>
+              </block>
+            </value>
+            <value name="ARG2">
+              <block type="text" id="4jFX7GPWZ|$~|M|Rc;p}">
+                <field name="TEXT">Ok</field>
+              </block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="167" language-version="21"></yacodeblocks>
+</xml>

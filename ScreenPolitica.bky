@@ -1,0 +1,16 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="LA{fL~?d2:)[o;A0v;V0" x="-740" y="-303">
+    <mutation component_type="Form" instance_name="ScreenPolitica" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenPolitica</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="5nX{pwr$,yY!6`$K4QT`">
+        <value name="SCREEN">
+          <block type="text" id="D8*-]FZRhDQ~)XWqlSJ@">
+            <field name="TEXT">ScreenSelect</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="167" language-version="21"></yacodeblocks>
+</xml>

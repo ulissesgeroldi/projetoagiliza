@@ -1,0 +1,49 @@
+<xml xmlns="http://www.w3.org/1999/xhtml">
+  <block type="component_event" id="G:V)-M9jrJB;~.S|U@oR" x="-2293" y="-594">
+    <mutation component_type="Button" instance_name="Button2" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button2</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="}KJv|i^QMMnN-BnH|pTQ">
+        <value name="SCREEN">
+          <block type="text" id="wvpj,Xd6O#b#5Zpi9H9w">
+            <field name="TEXT">ScreenAtendimento</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="RmCQz$sI=qF=2|QvU,bW" x="-2291" y="-511">
+    <mutation component_type="Form" instance_name="ScreenSelect" event_name="BackPressed"></mutation>
+    <field name="COMPONENT_SELECTOR">ScreenSelect</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="(vnp[Bc`~2#VN`eHxfUq">
+        <value name="SCREEN">
+          <block type="text" id="XS{7whr`N1qSxm|jsE]P">
+            <field name="TEXT">ScreenSelect</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="component_event" id="bPq*E5X=$%rm%{GsHZwa" x="-2288" y="-439">
+    <mutation component_type="Button" instance_name="Button3" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button3</field>
+    <statement name="DO">
+      <block type="controls_closeApplication" id="34:;O1+RGh`8MSZ*fs$,"></block>
+    </statement>
+  </block>
+  <block type="component_event" id="6J-=R(.Z1;w%opJ]=DtQ" x="-2292" y="-362">
+    <mutation component_type="Button" instance_name="Button4" event_name="Click"></mutation>
+    <field name="COMPONENT_SELECTOR">Button4</field>
+    <statement name="DO">
+      <block type="controls_openAnotherScreen" id="z:+x`kp%Q)r#jKo5UT?4">
+        <value name="SCREEN">
+          <block type="text" id="?@-3HWD%5=iPis||,m3;">
+            <field name="TEXT">ScreenPolitica</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <yacodeblocks ya-version="167" language-version="21"></yacodeblocks>
+</xml>
